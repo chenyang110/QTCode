@@ -1,0 +1,184 @@
+executing config test avutil
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avutil
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil -I. -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil\main.cpp
+F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil\main.cpp:21:30: fatal error: libavutil/avutil.h: No such file or directory
+ #include <libavutil/avutil.h>
+                              ^
+compilation terminated.
+makefile:366: recipe for target 'main.o' failed
+mingw32-make: *** [main.o] Error 1
+test avutil FAILED
+executing config test avutil
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil && mingw32-make distclean
+D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" -o Makefile F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil\avutil.pro
+del main.o
+找不到 F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil\main.o
+del libavutil.a
+找不到 F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil\libavutil.a
+del avutil.dll
+找不到 F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil\avutil.dll
+del Makefile
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avutil
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avutil && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avutil\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavutil.a -o avutil.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavutil -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avutil succeeded
+executing config test avcodec
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avcodec && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avcodec
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avcodec && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avcodec -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avcodec\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavcodec.a -o avcodec.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavcodec -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avcodec succeeded
+executing config test avformat
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avformat && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avformat
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avformat && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avformat -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avformat\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavformat.a -o avformat.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavformat -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avformat succeeded
+executing config test swscale
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\swscale && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/swscale
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\swscale && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\swscale -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\swscale\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libswscale.a -o swscale.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lswscale -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test swscale succeeded
+executing config test swresample
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\swresample && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/swresample
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\swresample && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\swresample -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\swresample\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libswresample.a -o swresample.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lswresample -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test swresample succeeded
+executing config test avresample
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avresample && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avresample
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avresample && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avresample -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avresample\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavresample.a -o avresample.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavresample -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avresample succeeded
+executing config test avfilter
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avfilter && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avfilter
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avfilter && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avfilter -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avfilter\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavfilter.a -o avfilter.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavfilter -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avfilter succeeded
+executing config test avdevice
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avdevice && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/avdevice
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\avdevice && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -D__STDC_CONSTANT_MACROS -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avdevice -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\avdevice\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libavdevice.a -o avdevice.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lavdevice -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test avdevice succeeded
+executing config test gl
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\gl && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/gl
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\gl && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\gl -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -ID:\QT\Qtinstall\5.5\mingw492_32\include\QtOpenGL -ID:\QT\Qtinstall\5.5\mingw492_32\include\QtWidgets -ID:\QT\Qtinstall\5.5\mingw492_32\include\QtGui -ID:\QT\Qtinstall\5.5\mingw492_32\include\QtANGLE -ID:\QT\Qtinstall\5.5\mingw492_32\include\QtCore -I. -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\gl\main.cpp
+g++ -Wl,-s -Wl,-subsystem,console -mthreads -o gl.exe main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -LD:/QT/Qtinstall/5.5/mingw492_32/lib -lQt5OpenGL -lQt5Widgets -lQt5Gui -lQt5Core 
+test gl succeeded
+executing config test sse4_1
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\sse4_1 && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/sse4_1
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\sse4_1 && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -msse4.1 -g -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\sse4_1 -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o sse4_1.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\sse4_1\sse4_1.cpp
+g++ -Wl,-subsystem,console -mthreads -o sse4_1.exe sse4_1.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib 
+test sse4_1 succeeded
+executing config test openal
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\openal && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/openal
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\openal && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\openal -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\openal\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libopenal.a -o openal.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -LD:/QT/Qtinstall/5.5/mingw492_32/lib -lOpenAL32 
+D:/QT/Qtinstall/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lOpenAL32
+collect2.exe: error: ld returned 1 exit status
+makefile:78: recipe for target 'openal.dll' failed
+mingw32-make: *** [openal.dll] Error 1
+test openal FAILED
+executing config test libass
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\libass && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/libass
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\libass && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\libass -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\libass\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,liblibass.a -o libass.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -LD:/QT/Qtinstall/5.5/mingw492_32/lib -lass 
+D:/QT/Qtinstall/Tools/mingw492_32/bin/../lib/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/ld.exe: cannot find -lass
+collect2.exe: error: ld returned 1 exit status
+makefile:78: recipe for target 'libass.dll' failed
+mingw32-make: *** [libass.dll] Error 1
+test libass FAILED
+executing config test uchardet
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\uchardet && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/uchardet
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\uchardet && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\uchardet -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\uchardet\main.cpp
+F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\uchardet\main.cpp:21:31: fatal error: uchardet/uchardet.h: No such file or directory
+ #include <uchardet/uchardet.h>
+                               ^
+compilation terminated.
+makefile:366: recipe for target 'main.o' failed
+mingw32-make: *** [main.o] Error 1
+test uchardet FAILED
+executing config test dx
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dx && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/dx
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dx && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -std=c++0x -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dx -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dx\main.cpp
+F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dx\main.cpp:22:42: fatal error: XAudio2.h: No such file or directory
+ #include <XAudio2.h> // standalone check?
+                                          ^
+compilation terminated.
+makefile:369: recipe for target 'main.o' failed
+mingw32-make: *** [main.o] Error 1
+test dx FAILED
+executing config test xaudio2
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\xaudio2 && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/xaudio2
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\xaudio2 && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\xaudio2 -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\xaudio2\main.cpp
+In file included from F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/XAudio2.h:66:0,
+                 from F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\xaudio2\main.cpp:31:
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:137:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+     #pragma warning(push)
+ ^
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:138:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+     #pragma warning(disable:4200)  // Disable zero-sized array warnings
+ ^
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:147:0: warning: ignoring #pragma warning  [-Wunknown-pragmas]
+     #pragma warning(pop)
+ ^
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:200:73: warning: 'uuid' attribute directive ignored [-Wattributes]
+         struct __declspec(uuid("00000001-0000-0010-8000-00aa00389b71")) KSDATAFORMAT_SUBTYPE_PCM_STRUCT;
+                                                                         ^
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:205:73: warning: 'uuid' attribute directive ignored [-Wattributes]
+         struct __declspec(uuid("00000002-0000-0010-8000-00aa00389b71")) KSDATAFORMAT_SUBTYPE_ADPCM_STRUCT;
+                                                                         ^
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/audiodefs.h:210:73: warning: 'uuid' attribute directive ignored [-Wattributes]
+         struct __declspec(uuid("00000003-0000-0010-8000-00aa00389b71")) KSDATAFORMAT_SUBTYPE_IEEE_FLOAT_STRUCT;
+                                                                         ^
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libxaudio2.a -o xaudio2.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test xaudio2 succeeded
+executing config test direct2d
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\direct2d && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/direct2d
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\direct2d && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\direct2d -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\direct2d\main.cpp
+g++ -Wl,-s -Wl,-subsystem,console -mthreads -o direct2d.exe main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib 
+test direct2d succeeded
+executing config test dxva
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dxva && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/dxva
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dxva && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dxva -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dxva\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libdxva.a -o dxva.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test dxva succeeded
+executing config test d3d11va
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\d3d11va && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/d3d11va
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\d3d11va && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -std=c++0x -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\d3d11va -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\d3d11va\main.cpp
+In file included from F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\d3d11va\main.cpp:22:0:
+F:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk/d3d11.h:14385:29: fatal error: d3d11sdklayers.h: No such file or directory
+ #include "d3d11sdklayers.h" 
+                             ^
+compilation terminated.
+makefile:371: recipe for target 'main.o' failed
+mingw32-make: *** [main.o] Error 1
+test d3d11va FAILED
+executing config test dsound
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dsound && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/dsound
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\dsound && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dsound -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\include -IF:\chenyang\QTcode\QtAV-master\QtAV\contrib\dxsdk -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\dsound\main.cpp
+g++ -Wl,-s -shared -Wl,-subsystem,console -mthreads -Wl,--out-implib,libdsound.a -o dsound.dll main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -ldsound -LD:/QT/Qtinstall/5.5/mingw492_32/lib 
+test dsound succeeded
+executing config test gdiplus
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\gdiplus && D:\QT\Qtinstall\5.5\mingw492_32\bin\qmake.exe -spec D:/QT/Qtinstall/5.5/mingw492_32/mkspecs/win32-g++ "CONFIG -= qt debug_and_release app_bundle lib_bundle" F:/chenyang/QTcode/QtAV-master/QtAV/config.tests/gdiplus
++ cd F:\chenyang\QTcode\QtAV-master\build-QtAV-Desktop_Qt_5_5_0_MinGW_32bit-Debug\config.tests\gdiplus && mingw32-make
+g++ -c -pipe -fno-keep-inline-dllexport -O2 -frtti -Wall -Wextra -fexceptions -mthreads -DUNICODE -IF:\chenyang\QTcode\QtAV-master\QtAV\config.tests\gdiplus -I. -IF:\chenyang\QTcode\QtAV-master\QtAV-depends-windows-x86+x64\include -ID:\QT\Qtinstall\5.5\mingw492_32\mkspecs\win32-g++  -o main.o F:\chenyang\QTcode\QtAV-master\QtAV\config.tests\gdiplus\main.cpp
+g++ -Wl,-s -Wl,-subsystem,console -mthreads -o gdiplus.exe main.o  -LF:/chenyang/QTcode/QtAV-master/QtAV/../QtAV-depends-windows-x86+x64/lib -lgdiplus -lGdi32 
+test gdiplus succeeded

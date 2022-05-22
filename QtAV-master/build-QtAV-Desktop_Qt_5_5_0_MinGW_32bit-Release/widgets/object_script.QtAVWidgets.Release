@@ -1,0 +1,15 @@
+INPUT(
+./..\.obj\QtAVWidgets_win_x86\global.o
+./..\.obj\QtAVWidgets_win_x86\VideoPreviewWidget.o
+./..\.obj\QtAVWidgets_win_x86\GraphicsItemRenderer.o
+./..\.obj\QtAVWidgets_win_x86\WidgetRenderer.o
+./..\.obj\QtAVWidgets_win_x86\OpenGLWidgetRenderer.o
+./..\.obj\QtAVWidgets_win_x86\GLWidgetRenderer2.o
+./..\.obj\QtAVWidgets_win_x86\GDIRenderer.o
+./..\.obj\QtAVWidgets_win_x86\Direct2DRenderer.o
+./..\.obj\QtAVWidgets_win_x86\moc_VideoPreviewWidget.o
+./..\.obj\QtAVWidgets_win_x86\moc_GraphicsItemRenderer.o
+./..\.obj\QtAVWidgets_win_x86\moc_WidgetRenderer.o
+./..\.obj\QtAVWidgets_win_x86\moc_OpenGLWidgetRenderer.o
+./..\.obj\QtAVWidgets_win_x86\moc_GLWidgetRenderer2.o
+);
